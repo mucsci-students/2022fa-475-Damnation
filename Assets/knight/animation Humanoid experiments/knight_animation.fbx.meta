@@ -1,0 +1,1090 @@
+fileFormatVersion: 2
+guid: 417ce11d0a19fb54e8ddb9e49df5c64d
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: basic_rig:Head
+  - first:
+      1: 100002
+    second: basic_rig:HeadTop_End
+  - first:
+      1: 100004
+    second: basic_rig:Hips
+  - first:
+      1: 100006
+    second: basic_rig:LeftArm
+  - first:
+      1: 100008
+    second: basic_rig:LeftFoot
+  - first:
+      1: 100010
+    second: basic_rig:LeftForeArm
+  - first:
+      1: 100012
+    second: basic_rig:LeftHand
+  - first:
+      1: 100014
+    second: basic_rig:LeftHandIndex1
+  - first:
+      1: 100016
+    second: basic_rig:LeftHandIndex2
+  - first:
+      1: 100018
+    second: basic_rig:LeftHandIndex3
+  - first:
+      1: 100020
+    second: basic_rig:LeftHandIndex4
+  - first:
+      1: 100022
+    second: basic_rig:LeftLeg
+  - first:
+      1: 100024
+    second: basic_rig:LeftShoulder
+  - first:
+      1: 100026
+    second: basic_rig:LeftToe_End
+  - first:
+      1: 100028
+    second: basic_rig:LeftToeBase
+  - first:
+      1: 100030
+    second: basic_rig:LeftUpLeg
+  - first:
+      1: 100032
+    second: basic_rig:Neck
+  - first:
+      1: 100034
+    second: basic_rig:RightArm
+  - first:
+      1: 100036
+    second: basic_rig:RightFoot
+  - first:
+      1: 100038
+    second: basic_rig:RightForeArm
+  - first:
+      1: 100040
+    second: basic_rig:RightHand
+  - first:
+      1: 100042
+    second: basic_rig:RightHandIndex1
+  - first:
+      1: 100044
+    second: basic_rig:RightHandIndex2
+  - first:
+      1: 100046
+    second: basic_rig:RightHandIndex3
+  - first:
+      1: 100048
+    second: basic_rig:RightHandIndex4
+  - first:
+      1: 100050
+    second: basic_rig:RightLeg
+  - first:
+      1: 100052
+    second: basic_rig:RightShoulder
+  - first:
+      1: 100054
+    second: basic_rig:RightToe_End
+  - first:
+      1: 100056
+    second: basic_rig:RightToeBase
+  - first:
+      1: 100058
+    second: basic_rig:RightUpLeg
+  - first:
+      1: 100060
+    second: basic_rig:Spine
+  - first:
+      1: 100062
+    second: basic_rig:Spine1
+  - first:
+      1: 100064
+    second: basic_rig:Spine2
+  - first:
+      1: 100066
+    second: knight.001
+  - first:
+      1: 100068
+    second: knight.002
+  - first:
+      1: 100070
+    second: //RootNode
+  - first:
+      4: 400000
+    second: basic_rig:Head
+  - first:
+      4: 400002
+    second: basic_rig:HeadTop_End
+  - first:
+      4: 400004
+    second: basic_rig:Hips
+  - first:
+      4: 400006
+    second: basic_rig:LeftArm
+  - first:
+      4: 400008
+    second: basic_rig:LeftFoot
+  - first:
+      4: 400010
+    second: basic_rig:LeftForeArm
+  - first:
+      4: 400012
+    second: basic_rig:LeftHand
+  - first:
+      4: 400014
+    second: basic_rig:LeftHandIndex1
+  - first:
+      4: 400016
+    second: basic_rig:LeftHandIndex2
+  - first:
+      4: 400018
+    second: basic_rig:LeftHandIndex3
+  - first:
+      4: 400020
+    second: basic_rig:LeftHandIndex4
+  - first:
+      4: 400022
+    second: basic_rig:LeftLeg
+  - first:
+      4: 400024
+    second: basic_rig:LeftShoulder
+  - first:
+      4: 400026
+    second: basic_rig:LeftToe_End
+  - first:
+      4: 400028
+    second: basic_rig:LeftToeBase
+  - first:
+      4: 400030
+    second: basic_rig:LeftUpLeg
+  - first:
+      4: 400032
+    second: basic_rig:Neck
+  - first:
+      4: 400034
+    second: basic_rig:RightArm
+  - first:
+      4: 400036
+    second: basic_rig:RightFoot
+  - first:
+      4: 400038
+    second: basic_rig:RightForeArm
+  - first:
+      4: 400040
+    second: basic_rig:RightHand
+  - first:
+      4: 400042
+    second: basic_rig:RightHandIndex1
+  - first:
+      4: 400044
+    second: basic_rig:RightHandIndex2
+  - first:
+      4: 400046
+    second: basic_rig:RightHandIndex3
+  - first:
+      4: 400048
+    second: basic_rig:RightHandIndex4
+  - first:
+      4: 400050
+    second: basic_rig:RightLeg
+  - first:
+      4: 400052
+    second: basic_rig:RightShoulder
+  - first:
+      4: 400054
+    second: basic_rig:RightToe_End
+  - first:
+      4: 400056
+    second: basic_rig:RightToeBase
+  - first:
+      4: 400058
+    second: basic_rig:RightUpLeg
+  - first:
+      4: 400060
+    second: basic_rig:Spine
+  - first:
+      4: 400062
+    second: basic_rig:Spine1
+  - first:
+      4: 400064
+    second: basic_rig:Spine2
+  - first:
+      4: 400066
+    second: knight.001
+  - first:
+      4: 400068
+    second: knight.002
+  - first:
+      4: 400070
+    second: //RootNode
+  - first:
+      21: 2100000
+    second: No Name
+  - first:
+      43: 4300000
+    second: knight.002
+  - first:
+      74: 7400000
+    second: knight.001|run_sword
+  - first:
+      74: 7400002
+    second: knight.001|attack
+  - first:
+      74: 7400004
+    second: knight.001|death1
+  - first:
+      74: 7400006
+    second: knight.001|death2
+  - first:
+      74: 7400008
+    second: knight.001|idle
+  - first:
+      74: 7400010
+    second: knight.001|jump
+  - first:
+      74: 7400012
+    second: knight.001|kick_roll
+  - first:
+      74: 7400014
+    second: knight.001|run
+  - first:
+      74: 7400016
+    second: knight.001|face_protection
+  - first:
+      74: 7400018
+    second: knight.001|sword_slash
+  - first:
+      74: 7400020
+    second: knight.001|walk
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: knight.002
+  externalObjects: {}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: knight.001|run_sword
+      takeName: knight.001|attack1
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|attack
+      takeName: knight.001|attack2
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 52
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|death1
+      takeName: knight.001|death1
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 77
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|death2
+      takeName: knight.001|death2
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 117
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|idle
+      takeName: knight.001|idle
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 57
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|jump
+      takeName: knight.001|jump
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|kick_roll
+      takeName: knight.001|kick_roll
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|run
+      takeName: knight.001|run
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|face_protection
+      takeName: knight.001|stand_block
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|sword_slash
+      takeName: knight.001|sword_slash
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 41
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: knight.001|walk
+      takeName: knight.001|walk
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: basic_rig:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: basic_rig:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: knight_animation(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: knight.001
+      parentName: knight_animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: -0, z: -0, w: 1}
+      scale: {x: 23.49883, y: 23.49883, z: 23.49883}
+    - name: basic_rig:Hips
+      parentName: knight.001
+      position: {x: -0.000050553805, y: 0.010251218, z: -0.00046388028}
+      rotation: {x: -0, y: 0.000000046566136, z: -0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: basic_rig:Spine
+      parentName: basic_rig:Hips
+      position: {x: -6.0535965e-11, y: 0.0011868624, z: -0.000054231383}
+      rotation: {x: -0.022828745, y: -0.0000001280235, z: -0.0000000029233775, w: 0.9997394}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: basic_rig:Spine1
+      parentName: basic_rig:Spine
+      position: {x: 3.7252902e-11, y: 0.001386117, z: -6.1467287e-10}
+      rotation: {x: 0.000000078231096, y: 0.00000005867838, z: -0.00000000897248, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+    - name: basic_rig:Spine2
+      parentName: basic_rig:Spine1
+      position: {x: 3.7252902e-11, y: 0.0015841388, z: -5.2154064e-10}
+      rotation: {x: -0.000000031664968, y: -7.1054274e-15, z: -1.9259382e-15, w: 1}
+      scale: {x: 1, y: 0.9999997, z: 0.99999994}
+    - name: basic_rig:Neck
+      parentName: basic_rig:Spine2
+      position: {x: -2.9802322e-10, y: 0.0017821518, z: -5.9604643e-10}
+      rotation: {x: 0.022828704, y: 0.00000004642112, z: 0.000000006882296, w: 0.9997394}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1.0000001}
+    - name: basic_rig:Head
+      parentName: basic_rig:Neck
+      position: {x: -3.352761e-10, y: 0.0011022746, z: 0.00009702779}
+      rotation: {x: -0.0000000055879354, y: -0.000000021827876, z: 0.0000000018189885, w: 1}
+      scale: {x: 1.0000002, y: 0.9999998, z: 0.9999996}
+    - name: basic_rig:HeadTop_End
+      parentName: basic_rig:Head
+      position: {x: -3.7252902e-11, y: 0.0020050209, z: 0.00017649241}
+      rotation: {x: -0, y: -0.000000004365571, z: -0.0000000032741827, w: 1}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: basic_rig:LeftShoulder
+      parentName: basic_rig:Spine2
+      position: {x: -0.00069179357, y: 0.0013862727, z: -0.000025108717}
+      rotation: {x: 0.5655444, y: -0.41674998, z: 0.58148026, w: 0.41031665}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1}
+    - name: basic_rig:LeftArm
+      parentName: basic_rig:LeftShoulder
+      position: {x: -3.5390257e-10, y: 0.0015583226, z: -7.9162416e-10}
+      rotation: {x: -0.1410905, y: -0.057071343, z: -0.0011508763, w: 0.9883497}
+      scale: {x: 0.99999976, y: 1.0000004, z: 0.9999998}
+    - name: basic_rig:LeftForeArm
+      parentName: basic_rig:LeftArm
+      position: {x: -7.4505804e-11, y: 0.002543538, z: 0.0000000011641532}
+      rotation: {x: -0.0255198, y: 0.0068259267, z: -0.036569305, w: 0.99898195}
+      scale: {x: 1.0000005, y: 0.9999999, z: 1.0000005}
+    - name: basic_rig:LeftHand
+      parentName: basic_rig:LeftForeArm
+      position: {x: -1.4901161e-10, y: 0.0027501902, z: -7.4505804e-11}
+      rotation: {x: 0.0056421347, y: 0.00017058477, z: 0.030191364, w: 0.9995282}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000004}
+    - name: basic_rig:LeftHandIndex1
+      parentName: basic_rig:LeftHand
+      position: {x: -2.9802322e-10, y: 0.0016445956, z: 0.0000000010430813}
+      rotation: {x: 0.019218773, y: -0.0012265133, z: -0.06370102, w: 0.9977832}
+      scale: {x: 0.99999994, y: 1.0000011, z: 0.9999998}
+    - name: basic_rig:LeftHandIndex2
+      parentName: basic_rig:LeftHandIndex1
+      position: {x: 2.9802322e-10, y: 0.00022394492, z: 5.564652e-10}
+      rotation: {x: -0.071018785, y: -0.0000024144524, z: -0.059228875, w: 0.99571496}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000006}
+    - name: basic_rig:LeftHandIndex3
+      parentName: basic_rig:LeftHandIndex2
+      position: {x: -0.000059382466, y: 0.0003493041, z: 0.00007119819}
+      rotation: {x: 0.018025694, y: 0.009474831, z: -0.031440925, w: 0.9992982}
+      scale: {x: 1.0000004, y: 1, z: 0.99999994}
+    - name: basic_rig:LeftHandIndex4
+      parentName: basic_rig:LeftHandIndex3
+      position: {x: -0.00008839503, y: 0.00028433, z: 0.00003498666}
+      rotation: {x: -0.000000057742277, y: -0.0000003979075, z: -0.0000000073446653, w: 1}
+      scale: {x: 1.0000002, y: 1.0000008, z: 1.0000001}
+    - name: basic_rig:RightShoulder
+      parentName: basic_rig:Spine2
+      position: {x: 0.00069179345, y: 0.0013856335, z: -0.000011099577}
+      rotation: {x: -0.5702869, y: -0.41456443, z: 0.57707137, w: -0.41218668}
+      scale: {x: 1.0000005, y: 1, z: 0.99999994}
+    - name: basic_rig:RightArm
+      parentName: basic_rig:RightShoulder
+      position: {x: -7.4505804e-11, y: 0.0015583208, z: -1.11758706e-10}
+      rotation: {x: 0.14089477, y: -0.089058444, z: 0.0095827, w: -0.98596424}
+      scale: {x: 0.9999997, y: 1.0000005, z: 0.99999994}
+    - name: basic_rig:RightForeArm
+      parentName: basic_rig:RightArm
+      position: {x: -1.44355e-10, y: 0.002546829, z: 2.2351741e-10}
+      rotation: {x: -0.02697995, y: -0.0091228625, z: 0.034772955, w: 0.99898934}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1.0000001}
+    - name: basic_rig:RightHand
+      parentName: basic_rig:RightForeArm
+      position: {x: -0.000000001117587, y: 0.0027567197, z: 2.9802322e-10}
+      rotation: {x: 0.00725495, y: -0.00023333772, z: -0.032163132, w: 0.99945635}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: basic_rig:RightHandIndex1
+      parentName: basic_rig:RightHand
+      position: {x: -1.4901161e-10, y: 0.0016243644, z: -7.4505804e-11}
+      rotation: {x: 0.016691074, y: 0.00043454015, z: 0.025869768, w: 0.9995259}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000004}
+    - name: basic_rig:RightHandIndex2
+      parentName: basic_rig:RightHandIndex1
+      position: {x: -2.9802322e-10, y: 0.00022849828, z: -8.1956386e-10}
+      rotation: {x: -0.06493173, y: -0.0000013588865, z: 0.03266553, w: 0.9973549}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: basic_rig:RightHandIndex3
+      parentName: basic_rig:RightHandIndex2
+      position: {x: 0.000036472975, y: 0.00036014436, z: 0.00007250063}
+      rotation: {x: -0.054573912, y: -0.0041437256, z: 0.04803557, w: 0.9973451}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
+    - name: basic_rig:RightHandIndex4
+      parentName: basic_rig:RightHandIndex3
+      position: {x: 0.0000764887, y: 0.00028783074, z: 0.00011172302}
+      rotation: {x: -0.000000063329914, y: 0.000000007101332, z: 0.000000014813529, w: 1}
+      scale: {x: 1, y: 1.0000004, z: 1.0000004}
+    - name: basic_rig:LeftUpLeg
+      parentName: basic_rig:Hips
+      position: {x: -0.0012854175, y: -0.00065975473, z: -0.000023863884}
+      rotation: {x: 0.001064925, y: -0.021623654, z: 0.9985471, w: 0.04934639}
+      scale: {x: 1.0000031, y: 1.000003, z: 1.0000062}
+    - name: basic_rig:LeftLeg
+      parentName: basic_rig:LeftUpLeg
+      position: {x: -1.4901161e-10, y: 0.0047579682, z: -1.6763806e-10}
+      rotation: {x: -0.110439904, y: 0.0025556944, z: -0.023059139, w: 0.993612}
+      scale: {x: 1.0000005, y: 1.000003, z: 0.99999803}
+    - name: basic_rig:LeftFoot
+      parentName: basic_rig:LeftLeg
+      position: {x: 1.0011717e-10, y: 0.0038151606, z: -4.4703483e-10}
+      rotation: {x: 0.59737307, y: 0.011134584, z: -0.00829518, w: 0.80184335}
+      scale: {x: 1.000001, y: 1.0000012, z: 0.99999946}
+    - name: basic_rig:LeftToeBase
+      parentName: basic_rig:LeftFoot
+      position: {x: -0, y: 0.0018126196, z: 3.72529e-10}
+      rotation: {x: 0.29001665, y: 0.0849699, z: -0.025860585, w: 0.9528913}
+      scale: {x: 0.99999976, y: 0.99999994, z: 1}
+    - name: basic_rig:LeftToe_End
+      parentName: basic_rig:LeftToeBase
+      position: {x: 1.7462298e-10, y: 0.00074952946, z: 1.8626451e-11}
+      rotation: {x: -0.000000029802319, y: -0.00000086426724, z: 0.00000021047887, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 0.99999964}
+    - name: basic_rig:RightUpLeg
+      parentName: basic_rig:Hips
+      position: {x: 0.0012854177, y: -0.00065975456, z: -0.000043064763}
+      rotation: {x: -0.00062340463, y: -0.012618307, z: 0.99869996, w: -0.049384553}
+      scale: {x: 1.0000055, y: 1.0000002, z: 1.0000002}
+    - name: basic_rig:RightLeg
+      parentName: basic_rig:RightUpLeg
+      position: {x: -4.4703483e-10, y: 0.0047550537, z: 0}
+      rotation: {x: -0.12640044, y: -0.0029621709, z: 0.023258355, w: 0.9917022}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: basic_rig:RightFoot
+      parentName: basic_rig:RightLeg
+      position: {x: 2.7939676e-10, y: 0.0038302292, z: -2.2351741e-10}
+      rotation: {x: 0.60810345, y: -0.009724799, z: 0.007450131, w: 0.7937633}
+      scale: {x: 0.9999997, y: 0.99999976, z: 0.9999996}
+    - name: basic_rig:RightToeBase
+      parentName: basic_rig:RightFoot
+      position: {x: -6.984919e-11, y: 0.001850646, z: -9.313225e-11}
+      rotation: {x: 0.28367683, y: -0.08543005, z: 0.025382236, w: 0.95476955}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1}
+    - name: basic_rig:RightToe_End
+      parentName: basic_rig:RightToeBase
+      position: {x: -2.6630004e-11, y: 0.0007641825, z: 2.7939677e-11}
+      rotation: {x: -0.00000020861626, y: 0.00000032782555, z: 0.0000001527369, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: knight.002
+      parentName: knight_animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.00000008146034, y: 0, z: -0, w: 1}
+      scale: {x: 23.498829, y: 23.498829, z: 23.498829}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

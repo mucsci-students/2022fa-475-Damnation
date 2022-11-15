@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 761b7fd0c09d3464791cbf314f429f36
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: basic_rig:Head
+    100002: basic_rig:HeadTop_End
+    100004: basic_rig:Hips
+    100006: basic_rig:LeftArm
+    100008: basic_rig:LeftFoot
+    100010: basic_rig:LeftForeArm
+    100012: basic_rig:LeftHand
+    100014: basic_rig:LeftHandIndex1
+    100016: basic_rig:LeftHandIndex2
+    100018: basic_rig:LeftHandIndex3
+    100020: basic_rig:LeftHandIndex4
+    100022: basic_rig:LeftLeg
+    100024: basic_rig:LeftShoulder
+    100026: basic_rig:LeftToe_End
+    100028: basic_rig:LeftToeBase
+    100030: basic_rig:LeftUpLeg
+    100032: basic_rig:Neck
+    100034: basic_rig:RightArm
+    100036: basic_rig:RightFoot
+    100038: basic_rig:RightForeArm
+    100040: basic_rig:RightHand
+    100042: basic_rig:RightHandIndex1
+    100044: basic_rig:RightHandIndex2
+    100046: basic_rig:RightHandIndex3
+    100048: basic_rig:RightHandIndex4
+    100050: basic_rig:RightLeg
+    100052: basic_rig:RightShoulder
+    100054: basic_rig:RightToe_End
+    100056: basic_rig:RightToeBase
+    100058: basic_rig:RightUpLeg
+    100060: basic_rig:Spine
+    100062: basic_rig:Spine1
+    100064: basic_rig:Spine2
+    100066: knight
+    100068: knight.001
+    100070: //RootNode
+    400000: basic_rig:Head
+    400002: basic_rig:HeadTop_End
+    400004: basic_rig:Hips
+    400006: basic_rig:LeftArm
+    400008: basic_rig:LeftFoot
+    400010: basic_rig:LeftForeArm
+    400012: basic_rig:LeftHand
+    400014: basic_rig:LeftHandIndex1
+    400016: basic_rig:LeftHandIndex2
+    400018: basic_rig:LeftHandIndex3
+    400020: basic_rig:LeftHandIndex4
+    400022: basic_rig:LeftLeg
+    400024: basic_rig:LeftShoulder
+    400026: basic_rig:LeftToe_End
+    400028: basic_rig:LeftToeBase
+    400030: basic_rig:LeftUpLeg
+    400032: basic_rig:Neck
+    400034: basic_rig:RightArm
+    400036: basic_rig:RightFoot
+    400038: basic_rig:RightForeArm
+    400040: basic_rig:RightHand
+    400042: basic_rig:RightHandIndex1
+    400044: basic_rig:RightHandIndex2
+    400046: basic_rig:RightHandIndex3
+    400048: basic_rig:RightHandIndex4
+    400050: basic_rig:RightLeg
+    400052: basic_rig:RightShoulder
+    400054: basic_rig:RightToe_End
+    400056: basic_rig:RightToeBase
+    400058: basic_rig:RightUpLeg
+    400060: basic_rig:Spine
+    400062: basic_rig:Spine1
+    400064: basic_rig:Spine2
+    400066: knight
+    400068: knight.001
+    400070: //RootNode
+    2100000: No Name
+    4300000: knight.001
+    7400000: knight|shield_block
+    9500000: //RootNode
+    13700000: knight.001
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
