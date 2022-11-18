@@ -53,7 +53,8 @@ public class PlayerLocomotion : MonoBehaviour
 
     Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
     rigidbody.velocity = projectedVelocity;
-
+    //rigidbody.AddForce(Physics.gravity * 1f, ForceMode.Acceleration);
+    
     
     animationHandler.UpdateAnimatorValues(inputHandler.moveAmount, 0);
     
