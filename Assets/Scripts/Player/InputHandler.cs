@@ -10,17 +10,28 @@ public class InputHandler: MonoBehaviour
   public float mouseX;
   public float mouseY;
 
-  public bool b_Input;
-
-  public bool dodgeFlag;
-  public bool sprintFlag;
-  public float dodgeInputTimer;
-
   PlayerControls inputActions;
+  CameraHandler cameraHandler;
 
   Vector2 movementInput;
   Vector2 cameraInput;
   
+  private void Awake()
+  {
+    cameraHandler = CameraHandler.singleton;
+  }
+
+
+  private void FixedUpdate()
+  {
+    float delta = Time.fixedDeltaTime;
+
+    if(cameraHandler != null)
+    {
+      cameraHandler.FollowTarget(delta);
+      cameraHandler.HandleCameraRotation(delta, mouseX, mouseY);
+    }
+  }
 
   public void OnEnable()
   {
@@ -41,7 +52,6 @@ public class InputHandler: MonoBehaviour
   public void TickInput(float delta)
   {
     MoveInput(delta);
-    HandleDodgeInput(delta);
   }
 
   private void MoveInput(float delta)
@@ -52,29 +62,5 @@ public class InputHandler: MonoBehaviour
     moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));
     mouseX = cameraInput.x;
     mouseY = cameraInput.y;
-  }
-
-  private void HandleDodgeInput(float delta)
-  {
-    //b_Input = inputActions.PlayerActions.Dodge.phase == UnityEngine.InputSystem.InputActionPhase.Started;
-    //b_Input = inputActions.PlayerActions.Dodge.triggered;
-    b_Input = inputActions.PlayerActions.Dodge.IsPressed();
-
-    if (b_Input)
-    {
-      dodgeInputTimer += delta;
-      if(dodgeInputTimer > 0.5f)
-        sprintFlag = true;
-    }
-    else
-    {
-      if (dodgeInputTimer > 0 && dodgeInputTimer < 0.5f)
-      {
-        sprintFlag = false;
-        dodgeFlag = true;
-      }
-
-      dodgeInputTimer = 0;
-    }
   }
 }

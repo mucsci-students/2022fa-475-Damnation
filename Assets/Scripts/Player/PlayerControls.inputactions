@@ -82,17 +82,6 @@
                 },
                 {
                     "name": "",
-                    "id": "62f2ec77-c19d-4d68-a663-d248e2b61867",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "0fabaf00-c851-42c1-b62b-aac8beb2462c",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
@@ -110,45 +99,6 @@
                     "processors": "NormalizeVector2",
                     "groups": "",
                     "action": "Camera",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Player Actions",
-            "id": "f4e5e3a8-ab98-455e-b436-82a0324fcbea",
-            "actions": [
-                {
-                    "name": "Dodge",
-                    "type": "Button",
-                    "id": "81ef63a8-c7f9-4a4f-9d04-c8c27d66aaae",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "eb393e1f-9a71-4ee6-8ca3-c85bc995f56f",
-                    "path": "<Gamepad>/buttonEast",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dodge",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "5076fd7c-9d8b-4769-9327-6986520476a2",
-                    "path": "<Keyboard>/leftShift",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Dodge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
