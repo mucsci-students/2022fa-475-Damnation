@@ -33,6 +33,8 @@ public class PlayerManager : MonoBehaviour
     inputHandler.TickInput(delta);
     playerLocomotion.HandleMovement(delta);
     playerLocomotion.HandleDodgingAndSprinting(delta);
+
+    
   }
 
   private void FixedUpdate()

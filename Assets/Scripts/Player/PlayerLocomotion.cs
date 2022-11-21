@@ -70,7 +70,7 @@ public class PlayerLocomotion : MonoBehaviour
 
   public void HandleMovement(float delta)
   {
-    if(inputHandler.dodgeFlag)
+    if (inputHandler.dodgeFlag)
       return;
 
     moveDirection = cameraObject.forward * inputHandler.vertical;
@@ -113,14 +113,14 @@ public class PlayerLocomotion : MonoBehaviour
 
       if(inputHandler.moveAmount > 0)
       {
-        animationHandler.PlayTargetAnimation("Dodge", true);
+        animationHandler.PlayTargetAnimation("Roll", true);
         moveDirection.y = 0;
         Quaternion dodgeRotation = Quaternion.LookRotation(moveDirection);
         myTransform.rotation = dodgeRotation;
       }
       else
       {
-        animationHandler.PlayTargetAnimation("Dodge", true);
+        animationHandler.PlayTargetAnimation("Backstep Dodge", true);
       }
     }
   }
