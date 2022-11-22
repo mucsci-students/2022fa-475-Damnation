@@ -10,6 +10,7 @@ namespace YB {
     {
         public GameObject modelPrefab;
         public bool isUnarmed;
+
     }
 }
 

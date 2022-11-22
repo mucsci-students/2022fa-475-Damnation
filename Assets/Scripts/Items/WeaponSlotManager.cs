@@ -9,11 +9,11 @@ namespace YB {
         WeaponHolderSlot leftHandSlot;
         WeaponHolderSlot rightHandSlot;
 
-        QuickSlotsUI quickSlotsUI;
+        QuickSlotUI quickSlotsUI;
 
         private void Awake() 
         {
-            quickSlotsUI = FindObjectOfType<QuickSlotsUI>();
+            quickSlotsUI = FindObjectOfType<QuickSlotUI>();
 
 
             WeaponHolderSlot[] weaponHolderSlots = GetComponentsInChildren<WeaponHolderSlot>();
