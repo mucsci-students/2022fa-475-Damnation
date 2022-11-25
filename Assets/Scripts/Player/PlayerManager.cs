@@ -36,7 +36,12 @@ public class PlayerManager : MonoBehaviour
     playerLocomotion.HandleMovement(delta);
     playerLocomotion.HandleDodgingAndSprinting(delta);
     playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
-    
+    /*
+    if(isRolling)
+    {
+      rollEndpoint.position = rollEndpointTransform.position;
+      transform.position = Vector3.MoveTowards(transform.position, rollEndpoint.position, dodgeSpeed);
+    }*/
   }
 
   private void FixedUpdate()

@@ -37,8 +37,19 @@ public class PlayerLocomotion : MonoBehaviour
   [SerializeField]
   float rotationSpeed = 10;
   [SerializeField]
+  float dodgeSpeed = 15;
+  [SerializeField]
   float fallingSpeed = 45;
-  
+
+  [Header("Rolling")]
+  [SerializeField]
+  Transform rollEndpoint;
+  [SerializeField]
+  Transform rollEndpointTransform;
+  [SerializeField]
+  Transform backstepEndpointTransform;
+  [SerializeField]
+  Transform rollCarrier;
 
   void Start()
   {
@@ -103,10 +114,8 @@ public class PlayerLocomotion : MonoBehaviour
     {
       speed = sprintSpeed;
       playerManager.isSprinting = true;
-      moveDirection *= speed;
     }
-    else
-      moveDirection *= speed;
+    moveDirection *= speed;
 
     Vector3 projectedVelocity = Vector3.ProjectOnPlane(moveDirection, normalVector);
     rigidbody.velocity = projectedVelocity;
@@ -136,10 +145,14 @@ public class PlayerLocomotion : MonoBehaviour
         moveDirection.y = 0;
         Quaternion dodgeRotation = Quaternion.LookRotation(moveDirection);
         myTransform.rotation = dodgeRotation;
+
+        //rollEndpoint.position = rollEndpointTransform.position;
+        //transform.position = Vector3.MoveTowards(transform.position, rollEndpoint.position, dodgeSpeed * Time.deltaTime);
       }
       else
       {
         animationHandler.PlayTargetAnimation("Backstep Dodge", true);
+        
       }
     }
   }
@@ -158,8 +171,10 @@ public class PlayerLocomotion : MonoBehaviour
 
     if(playerManager.isInAir)
     {
-      rigidbody.AddForce(-Vector3.up * fallingSpeed);
-      rigidbody.AddForce(moveDirection * fallingSpeed / 10f);
+      //rigidbody.AddForce(-Vector3.up * fallingSpeed);
+      //rigidbody.AddForce(moveDirection * fallingSpeed / 10f);
+      rigidbody.AddForce((-Vector3.up * fallingSpeed) + (moveDirection * fallingSpeed / 10f));
+      //acceleration += 0.01f;
     }
 
     Vector3 dir = moveDirection;
@@ -186,7 +201,7 @@ public class PlayerLocomotion : MonoBehaviour
           animationHandler.PlayTargetAnimation("Locomotion", false);
           inAirTimer = 0;
         }
-
+        //acceleration = 0f;
         playerManager.isInAir = false;
       }
     }
