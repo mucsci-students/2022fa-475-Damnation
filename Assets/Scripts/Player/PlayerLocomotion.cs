@@ -40,7 +40,7 @@ public class PlayerLocomotion : MonoBehaviour
   float dodgeSpeed = 15;
   [SerializeField]
   float fallingSpeed = 45;
-
+/*
   [Header("Rolling")]
   [SerializeField]
   Transform rollEndpoint;
@@ -50,7 +50,7 @@ public class PlayerLocomotion : MonoBehaviour
   Transform backstepEndpointTransform;
   [SerializeField]
   Transform rollCarrier;
-
+*/
   void Start()
   {
     playerManager = GetComponent<PlayerManager>();

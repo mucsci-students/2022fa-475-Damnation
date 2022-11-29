@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace YB {
+[CreateAssetMenu(menuName = "Items/Weapon Item")]
+public class WeaponItem : Item
+{
+  public GameObject modelPrefab;
+  public bool isUnarmed;
 
-    [CreateAssetMenu(menuName = "Items/Weapon Item")]
-    public class WeaponItem : Item
-    {
-        public GameObject modelPrefab;
-        public bool isUnarmed;
-
-    }
 }
 
