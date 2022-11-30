@@ -117,9 +117,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.85593414
-  m_Height: 6
+  m_Height: 5.3778877
   m_Direction: 1
-  m_Center: {x: 0, y: 3.5, z: 0}
+  m_Center: {x: 0, y: 3.8110561, z: 0}
 --- !u!54 &1971818858824850963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -176,8 +176,9 @@ MonoBehaviour:
   normalCamera: {fileID: 1971818860332925508}
   groundDetectionRayStartPoint: 0.5
   minimumDistanceNeededToBeginFall: 1
-  groundDirectionRayDistance: 0.2
+  groundDirectionRayDistance: 0.1
   inAirTimer: 0
+  walkingSpeed: 3
   movementSpeed: 5
   sprintSpeed: 10
   rotationSpeed: 10
