@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {   
-    bool isPerformingAction;
+    public bool isPerformingAction;
     [Header("A.I Settings")]
     public float detectionRadius = 20;
     //higher, and lower, change field of view
@@ -21,12 +21,17 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+    }
+    private void FixedUpdate(){
         HandleCurrentAction();
     }
 
     public void HandleCurrentAction(){
         if(enemyLocoManager.currentTarget == null){
             enemyLocoManager.HandleDetection();
+        }
+        else{
+            enemyLocoManager.HandleMoveToTarget();
         }
     }
 
