@@ -21,6 +21,7 @@ public class InputHandler: MonoBehaviour
   PlayerControls inputActions;
   PlayerAttacker playerAttacker;
   PlayerInventory playerInventory;
+  AnimationHandler animationHandler;
 
   Vector2 movementInput;
   Vector2 cameraInput;
@@ -29,6 +30,7 @@ public class InputHandler: MonoBehaviour
   {
     playerAttacker = GetComponent<PlayerAttacker>();
     playerInventory = GetComponent<PlayerInventory>();
+    animationHandler = GetComponent<AnimationHandler>();
   }
 
   public void OnEnable()
@@ -93,7 +95,9 @@ public class InputHandler: MonoBehaviour
 
     if(rb_Input)
     {
+      //animationHandler.anim.SetBool("isUsingRightHand", true);
       playerAttacker.HandleLightAttack(playerInventory.rightWeapon);
+
     }
     
     if(rt_Input)

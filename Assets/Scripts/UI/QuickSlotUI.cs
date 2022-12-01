@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace YB {
+
     public class QuickSlotUI : MonoBehaviour
     {
         public Image leftWeaponIcon;
@@ -39,5 +39,5 @@ namespace YB {
             }
         }
     }
-}
+
 

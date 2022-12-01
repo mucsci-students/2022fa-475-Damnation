@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace YB {
+
     public class HealthBar : MonoBehaviour
     {
         public Slider slider;
@@ -18,5 +18,5 @@ namespace YB {
             slider.value = currentHealth;
         }
     }
-}
+
 

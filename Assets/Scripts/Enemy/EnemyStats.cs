@@ -18,12 +18,24 @@ public class EnemyStats : CharacterStats
 
         maxHealth = SetMaxHealthFromHealthLevel();
         currentHealth = maxHealth;
+        isDead = false;
     }
 
      private int SetMaxHealthFromHealthLevel() {
             maxHealth = healthLevel * 10;
             return maxHealth;
         }
+    public void TakeDamage(int damage){
+
+        currentHealth = currentHealth - damage;
+        //animator.Play("Damage");
+        if(currentHealth <= 0){
+
+            currentHealth = 0;
+            animator.Play("Death");
+            isDead = true;
+        }
+    }
 
     // Update is called once per frame
     void Update()

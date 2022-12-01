@@ -78,9 +78,9 @@ GameObject:
   - component: {fileID: 1971818858824850962}
   - component: {fileID: 1971818859339046843}
   - component: {fileID: 1971818859339046842}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +154,8 @@ MonoBehaviour:
   mouseX: 0
   mouseY: 0
   b_Input: 0
+  rb_Input: 0
+  rt_Input: 0
   dodgeFlag: 0
   sprintFlag: 0
   dodgeInputTimer: 0
@@ -912,7 +914,7 @@ GameObject:
   - component: {fileID: 1971818859704972067}
   - component: {fileID: 1971818859704972066}
   - component: {fileID: 1971818859704972077}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: knight_animation (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

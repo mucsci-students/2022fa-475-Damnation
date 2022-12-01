@@ -58,39 +58,41 @@ public class EnemyLocoManager : MonoBehaviour
    public void HandleMoveToTarget(){
 
         if(enemyManager.isPerformingAction){
+            enemyAnimManager.anim.SetFloat("Vertical", 0, 0.1f, Time.deltaTime);
+            navMeshAgent.enabled = false;
             return;
         }
     Vector3 targetDirection = currentTarget.transform.position - transform.position;
     distanceFromTarget = Vector3.Distance(currentTarget.transform.position, transform.position);
     float viewableAngle = Vector3.Angle(targetDirection, transform.forward);
 
-    if(enemyManager.isPerformingAction){
-        enemyAnimManager.anim.SetFloat("Vertical", 0, 0.1f, Time.deltaTime);
-        navMeshAgent.enabled = false;
-    }
-    else{
+   
+  
         if(distanceFromTarget > stoppingDistance){
+
             enemyAnimManager.anim.SetFloat("Vertical", 1, 0.1f, Time.deltaTime);
 
             
-            //targetDirection.Normalize();
-            //targetDirection.y = 0;
+            // targetDirection.Normalize();
+            // targetDirection.y = 0;
 
-            //float speed = 2;
-            //targetDirection *= speed;
-            //Vector3 projectedVelocity = Vector3.ProjectOnPlane(targetDirection, Vector3.up);
-            //enemyRigidBody.velocity = projectedVelocity;
+            // float speed = 2;
+            // targetDirection *= speed;
+            // Vector3 projectedVelocity = Vector3.ProjectOnPlane(targetDirection, Vector3.up);
+            // enemyRigidBody.velocity = projectedVelocity;
         
         }
         else if(distanceFromTarget <= stoppingDistance){
             enemyAnimManager.anim.SetFloat("Vertical", 0, 0.1f, Time.deltaTime);
+            navMeshAgent.enabled = false;
         }
-    }
+    
 
 
 
     HandleRotateTowardsTarget();
     transform.position = new Vector3(navMeshAgent.transform.position.x, navMeshAgent.transform.position.y, navMeshAgent.transform.position.z);
+     //navMeshAgent.transform.position = transform.position;
     navMeshAgent.transform.localPosition = Vector3.zero;
     navMeshAgent.transform.localRotation = Quaternion.identity;
    }

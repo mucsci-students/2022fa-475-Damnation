@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace YB {
     public class PlayerStats : CharacterStats
     {
         public HealthBar healthbar;
+        AnimationHandler animationHandler;
 
         void Start() {
             maxHealth = SetMaxHealthFromHealthLevel();
@@ -24,7 +24,13 @@ namespace YB {
             currentHealth = currentHealth - damage;
 
             healthbar.SetCurrentHealth(currentHealth);
+
+            if(currentHealth <= 0){
+
+                currentHealth = 0;
+
+            }
         }
     }
-}
+
 
