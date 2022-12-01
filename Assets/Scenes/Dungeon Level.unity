@@ -2086,6 +2086,7 @@ MonoBehaviour:
   minimumDistanceNeededToBeginFall: 1
   groundDirectionRayDistance: 0.2
   inAirTimer: 0
+  walkingSpeed: 3
   movementSpeed: 5
   sprintSpeed: 10
   rotationSpeed: 10
@@ -2109,6 +2110,8 @@ MonoBehaviour:
   mouseX: 0
   mouseY: 0
   b_Input: 0
+  rb_Input: 0
+  rt_Input: 0
   dodgeFlag: 0
   sprintFlag: 0
   dodgeInputTimer: 0
@@ -2679,6 +2682,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.015
       objectReference: {fileID: 0}
+    - target: {fileID: 5906596557924518379, guid: 4d39bcd57cb95e940b557398ab6043e6, type: 3}
+      propertyPath: currentAttack
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906596557924518379, guid: 4d39bcd57cb95e940b557398ab6043e6, type: 3}
+      propertyPath: enemyAttacks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5906596557924518379, guid: 4d39bcd57cb95e940b557398ab6043e6, type: 3}
+      propertyPath: enemyAttacks.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: ec4363484d40df64993cea92aff2ef17, type: 2}
+    - target: {fileID: 5906596557924518379, guid: 4d39bcd57cb95e940b557398ab6043e6, type: 3}
+      propertyPath: enemyAttacks.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b16744318c0ba4489c21d7c36be2ded, type: 2}
     - target: {fileID: 6714728349851656366, guid: 4d39bcd57cb95e940b557398ab6043e6, type: 3}
       propertyPath: m_Radius
       value: 0.3
