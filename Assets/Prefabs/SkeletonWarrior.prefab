@@ -138,7 +138,7 @@ MonoBehaviour:
   currentAttack: {fileID: 0}
   isUsingRightHand: 0
   isUsingLeftHand: 0
-  currentRecoveryTime: 0
+  currentRecoveryTime: 0.5
 --- !u!114 &5978922835165731799
 MonoBehaviour:
   m_ObjectHideFlags: 0
