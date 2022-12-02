@@ -48,11 +48,12 @@ public class WeaponSlotManager : MonoBehaviour
 
         leftHandDamageCollider = leftHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
     }
+
     public void LoadRightWeaponDamageCollider()
     {
         rightHandDamageCollider = rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
     }
-  }
+    
   
   
   public void OpenDamageCollider(){

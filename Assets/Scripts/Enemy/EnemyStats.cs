@@ -37,6 +37,7 @@ public class EnemyStats : CharacterStats
 
             currentHealth = 0;
             animator.Play("Death");
+            animator.SetBool("isDead", true);
             isDead = true;
 
         }
