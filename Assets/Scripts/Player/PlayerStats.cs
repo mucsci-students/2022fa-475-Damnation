@@ -5,51 +5,46 @@ using UnityEngine;
 
 public class PlayerStats : CharacterStats
 {
-    HealthBar healthbar;
+    public HealthBar healthbar;
     StaminaBar staminabar;
     AnimationHandler animationHandler;
 
     private void Awake() {
         healthbar = FindObjectOfType<HealthBar>();
         staminabar = FindObjectOfType<StaminaBar>();
+        animationHandler = GetComponentInChildren<AnimationHandler>();
     }
 
-    void Start()
-    {
-        maxHealth = SetMaxHealthFromHealthLevel();
-        currentHealth = maxHealth;
-        healthbar.SetMaxHealth(maxHealth);
-        healthbar.SetCurrentHealth(currentHealth);
-
-
-        maxStamina = SetMaxHealthFromStaminaLevel();
-        currentStamina = maxStamina;
-        staminabar.SetMaxStamina(maxStamina);
-        staminabar.SetCurrentStamina(currentStamina);
-    }
-
+        void Start() {
+            isDead = false;
+            maxHealth = SetMaxHealthFromHealthLevel();
+            currentHealth = maxHealth;
+            healthbar.SetMaxHealth(maxHealth);
+        }
+    
     private int SetMaxHealthFromHealthLevel()
     {
         maxHealth = healthLevel * 10;
         return maxHealth;
     }
 
-    private int SetMaxHealthFromStaminaLevel()
-    {
-        maxStamina = staminaLevel * 10;
-        return maxStamina;
-    }
-
-    public void TakeDamage(int damage)
-    {
-        currentHealth = currentHealth - damage;
-
-        healthbar.SetCurrentHealth(currentHealth);
+        public void TakeDamage(int damage)
+        {   
+             if(isDead){
+                return;
+             }
+            currentHealth = currentHealth - damage;
+            animationHandler.PlayTargetAnimation("knight_001_face_protection", true);
+            healthbar.SetCurrentHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
-
-            currentHealth = 0;
+                
+                currentHealth = 0;
+                animationHandler.PlayTargetAnimation("knight_001_death1", true);
+                isDead = true;
+                animationHandler.isDead(isDead);
+                
 
         }
     }

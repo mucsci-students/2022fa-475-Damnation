@@ -17,6 +17,9 @@ public class EnemyManager : MonoBehaviour
     EnemyLocoManager enemyLocoManager;
     EnemyAnimatorManager enemyAnimManager;
 
+    public bool isUsingRightHand;
+    public bool isUsingLeftHand;
+
     public float currentRecoveryTime = 0;
     // Start is called before the first frame update
 

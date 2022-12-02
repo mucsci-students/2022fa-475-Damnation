@@ -14,6 +14,8 @@ public class PlayerManager : MonoBehaviour
   public bool isSprinting;
   public bool isInAir;
   public bool isGrounded;
+  public bool isUsingRightHand;
+  public bool isUsingLeftHand;
 
   private void Awake()
   {
@@ -31,6 +33,8 @@ public class PlayerManager : MonoBehaviour
   {
     float delta = Time.deltaTime;
     isInteracting = anim.GetBool("isInteracting");
+    isUsingRightHand = anim.GetBool("isUsingRightHand");
+    isUsingLeftHand = anim.GetBool("isUsingLeftHand");
     
     inputHandler.TickInput(delta);
     playerLocomotion.HandleMovement(delta);

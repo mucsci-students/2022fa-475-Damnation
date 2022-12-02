@@ -7,16 +7,26 @@ public class WeaponSlotManager : MonoBehaviour
     WeaponHolderSlot leftHandSlot;
     WeaponHolderSlot rightHandSlot;
 
-    DamageCollider leftHandDamageCollider;
-    DamageCollider rightHandDamageCollider;
 
+  DamageCollider leftHandDamageCollider;
+  DamageCollider rightHandDamageCollider;
 
-    PlayerStats playerStats;
+  Animator animator;
 
+  PlayerStats playerStats;
+  InputHandler inputHandler;
 
-    private void Awake()
-    {
-        playerStats = GetComponentInParent<PlayerStats>();
+  PlayerManager playerManager;
+
+  //QuickSlotUI quickSlotsUI;
+
+  private void Awake() 
+  {
+    //quickSlotsUI = FindObjectOfType<QuickSlotUI>();
+    playerStats = GetComponentInParent<PlayerStats>();
+    inputHandler = GetComponentInParent<InputHandler>();
+    playerManager = GetComponentInParent<PlayerManager>();
+    animator = GetComponent<Animator>();
 
         WeaponHolderSlot[] weaponHolderSlots = GetComponentsInChildren<WeaponHolderSlot>();
         foreach (WeaponHolderSlot weaponSlot in weaponHolderSlots)
@@ -30,17 +40,41 @@ public class WeaponSlotManager : MonoBehaviour
                 rightHandSlot = weaponSlot;
             }
         }
-    }
+
+  }
 
     public void LoadLeftWeaponDamageCollider()
     {
 
         leftHandDamageCollider = leftHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
     }
+
     public void LoadRightWeaponDamageCollider()
     {
         rightHandDamageCollider = rightHandSlot.currentWeaponModel.GetComponentInChildren<DamageCollider>();
     }
+    
+  
+  
+  public void OpenDamageCollider(){
+    if (playerManager.isUsingRightHand){
+      rightHandDamageCollider.EnableDamageCollider();
+    }
+    else if (playerManager.isUsingLeftHand){
+
+      leftHandDamageCollider.EnableDamageCollider();
+    }
+
+  }
+
+  public void CloseDamageCollider(){
+
+    rightHandDamageCollider.DisableDamageCollider();
+    leftHandDamageCollider.DisableDamageCollider();
+  }
+
+
+
 
     public void LoadWeaponOnSlot(WeaponItem weaponItem, bool isLeft)
     {
@@ -56,32 +90,6 @@ public class WeaponSlotManager : MonoBehaviour
         }
     }
 
-    #region handle damage colliders
-    public void OpenRightDamageCollider()
-    {
-
-        rightHandDamageCollider.EnableDamageCollider();
-    }
-
-    public void OpenLeftDamageCollider()
-    {
-
-        leftHandDamageCollider.EnableDamageCollider();
-    }
-
-    public void CloseRightDamageCollider()
-    {
-
-        rightHandDamageCollider.DisableDamageCollider();
-    }
-
-    public void CloseLeftDamageCollider()
-    {
-
-        leftHandDamageCollider.DisableDamageCollider();
-    }
-    #endregion
-
     public void DrainStaminaLightAttack()
     {
         //Stamina Cost
@@ -94,6 +102,8 @@ public class WeaponSlotManager : MonoBehaviour
 
     }
 
+
 }
+
 
 

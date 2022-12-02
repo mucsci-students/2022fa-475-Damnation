@@ -30,7 +30,7 @@ public class InputHandler: MonoBehaviour
   {
     playerAttacker = GetComponent<PlayerAttacker>();
     playerInventory = GetComponent<PlayerInventory>();
-    animationHandler = GetComponent<AnimationHandler>();
+    animationHandler = GetComponentInChildren<AnimationHandler>();
   }
 
   public void OnEnable()
@@ -95,7 +95,7 @@ public class InputHandler: MonoBehaviour
 
     if(rb_Input)
     {
-      //animationHandler.anim.SetBool("isUsingRightHand", true);
+      animationHandler.anim.SetBool("isUsingRightHand", true);
       playerAttacker.HandleLightAttack(playerInventory.rightWeapon);
 
     }
@@ -103,6 +103,7 @@ public class InputHandler: MonoBehaviour
     if(rt_Input)
     {
       playerAttacker.HandleHeavyAttack(playerInventory.rightWeapon);
+      animationHandler.anim.SetBool("isUsingRightHand", true);
     }
   }
 }
