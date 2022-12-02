@@ -203,6 +203,8 @@ MonoBehaviour:
   isSprinting: 0
   isInAir: 0
   isGrounded: 0
+  isUsingRightHand: 0
+  isUsingLeftHand: 0
 --- !u!114 &1971818859339046842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,8 +232,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthLevel: 10
+  staminaLevel: 10
   maxHealth: 0
   currentHealth: 0
+  maxStamina: 0
+  currentStamina: 0
   isDead: 0
   healthbar: {fileID: 0}
 --- !u!1 &1971818859311329278
