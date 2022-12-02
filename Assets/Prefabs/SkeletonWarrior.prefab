@@ -130,8 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPerformingAction: 0
   detectionRadius: 20
-  maximumDetectionAngle: 50
-  minimumDetectionAngle: -50
+  maximumDetectionAngle: 90
+  minimumDetectionAngle: -90
   enemyAttacks:
   - {fileID: 11400000, guid: ec4363484d40df64993cea92aff2ef17, type: 2}
   - {fileID: 11400000, guid: 2b16744318c0ba4489c21d7c36be2ded, type: 2}
