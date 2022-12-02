@@ -10,6 +10,7 @@ public class EnemyLocoManager : MonoBehaviour
     EnemyManager enemyManager;
     public LayerMask detectionLayer;
     EnemyAnimatorManager enemyAnimManager;
+    EnemyStats enemyStats;
 
     public float distanceFromTarget;
     public float stoppingDistance = 2;
@@ -24,6 +25,7 @@ public class EnemyLocoManager : MonoBehaviour
         enemyAnimManager = GetComponent<EnemyAnimatorManager>();
         navMeshAgent = GetComponentInChildren<NavMeshAgent>();
         enemyRigidBody = GetComponent<Rigidbody>();
+        enemyStats = GetComponent<EnemyStats>();
     }
     private void Start(){
         navMeshAgent.enabled = false;
@@ -31,6 +33,7 @@ public class EnemyLocoManager : MonoBehaviour
     }
 
    public void HandleDetection(){
+   
     Collider[] colliders = Physics.OverlapSphere(transform.position, enemyManager.detectionRadius, detectionLayer);  
 
     for(int i = 0; i < colliders.Length; ++i){
@@ -56,7 +59,7 @@ public class EnemyLocoManager : MonoBehaviour
    }
 
    public void HandleMoveToTarget(){
-
+       
         if(enemyManager.isPerformingAction){
             enemyAnimManager.anim.SetFloat("Vertical", 0, 0.1f, Time.deltaTime);
             navMeshAgent.enabled = false;

@@ -10,12 +10,22 @@ public class WeaponSlotManager : MonoBehaviour
   DamageCollider leftHandDamageCollider;
   DamageCollider rightHandDamageCollider;
 
+  Animator animator;
+
+  PlayerStats playerStats;
+  InputHandler inputHandler;
+
+  PlayerManager playerManager;
+
   //QuickSlotUI quickSlotsUI;
 
   private void Awake() 
   {
     //quickSlotsUI = FindObjectOfType<QuickSlotUI>();
-
+    playerStats = GetComponentInParent<PlayerStats>();
+    inputHandler = GetComponentInParent<InputHandler>();
+    playerManager = GetComponentInParent<PlayerManager>();
+    animator = GetComponent<Animator>();
 
     WeaponHolderSlot[] weaponHolderSlots = GetComponentsInChildren<WeaponHolderSlot>();
     foreach (WeaponHolderSlot weaponSlot in weaponHolderSlots) 
@@ -23,6 +33,7 @@ public class WeaponSlotManager : MonoBehaviour
       if (weaponSlot.isLeftHandSlot) 
       {
         leftHandSlot = weaponSlot;
+        
       } 
       else if (weaponSlot.isRightHandSlot) 
       {
@@ -56,26 +67,30 @@ public class WeaponSlotManager : MonoBehaviour
   }
   
   #region handle damage colliders
-  public void OpenRightDamageCollider(){
+  
+public void OpenDamageCollider(){
+    if (playerManager.isUsingRightHand){
+      Debug.Log("tacos");
+      rightHandDamageCollider.EnableDamageCollider();
+    }
+    else if (playerManager.isUsingLeftHand){
 
-    rightHandDamageCollider.EnableDamageCollider();
+      leftHandDamageCollider.EnableDamageCollider();
+    }
+
   }
 
-  public void OpenLeftDamageCollider(){
-
-    leftHandDamageCollider.EnableDamageCollider();
-  }
-
-  public void CloseRightDamageCollider(){
+  public void CloseDamageCollider(){
 
     rightHandDamageCollider.DisableDamageCollider();
-  }
-
-  public void CloseLeftDamageCollider(){
-
     leftHandDamageCollider.DisableDamageCollider();
   }
   #endregion
+
+
+
+
 }
+
 
 

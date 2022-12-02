@@ -10,7 +10,7 @@ public class DamageCollider : MonoBehaviour
     private void Awake(){
         damageCollider = GetComponent<BoxCollider>();
         damageCollider.gameObject.SetActive(true);
-        //damageCollider.isTrigger = true;
+        damageCollider.isTrigger = true;
         damageCollider.enabled = false;
 
     }
@@ -25,22 +25,22 @@ public class DamageCollider : MonoBehaviour
         damageCollider.enabled = false;
     }
 
-    void OnCollisionEnter(Collider collision){
+   private void OnTriggerEnter(Collider other){
 
         Debug.Log("entered");
         print("hello");
-        if(collision.tag == "Player"){
+        if(other.gameObject.tag == "Player"){
 
-            PlayerStats playerStats = collision.GetComponent<PlayerStats>();
+            PlayerStats playerStats = other.GetComponent<PlayerStats>();
         
         if(playerStats != null){
 
             playerStats.TakeDamage(weaponDamage);
         }
         }
-        if(collision.tag == "enemy"){
+        if(other.gameObject.tag == "enemy"){
             Debug.Log("enemy collider");
-            EnemyStats enemyStats = collision.GetComponent<EnemyStats>();
+            EnemyStats enemyStats = other.GetComponent<EnemyStats>();
             
         
         if(enemyStats != null){
