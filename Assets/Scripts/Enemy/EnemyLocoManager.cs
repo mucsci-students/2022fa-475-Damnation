@@ -33,7 +33,10 @@ public class EnemyLocoManager : MonoBehaviour
     }
 
    public void HandleDetection(){
+   if(enemyStats.isDead){
    
+    return;
+   }
     Collider[] colliders = Physics.OverlapSphere(transform.position, enemyManager.detectionRadius, detectionLayer);  
 
     for(int i = 0; i < colliders.Length; ++i){
@@ -59,7 +62,12 @@ public class EnemyLocoManager : MonoBehaviour
    }
 
    public void HandleMoveToTarget(){
-       
+       if(enemyStats.isDead){
+         enemyManager.enabled = false;
+    this.enabled = false;
+        enemyRigidBody.isKinematic = true;
+        return;
+       }
         if(enemyManager.isPerformingAction){
             enemyAnimManager.anim.SetFloat("Vertical", 0, 0.1f, Time.deltaTime);
             navMeshAgent.enabled = false;

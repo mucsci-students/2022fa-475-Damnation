@@ -12,9 +12,4 @@ public class AnimatorManager : MonoBehaviour
     anim.SetBool("isInteracting", isInteracting);
     anim.CrossFade(targetAnim, 0.2f);
   }
-  public void isDead(bool isDead){
-    if(isDead){
-      anim.SetBool("isDead", isDead);
-    }
-  }
 }
