@@ -111,7 +111,7 @@ MonoBehaviour:
   enemyRigidBody: {fileID: 0}
   detectionLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1024
   distanceFromTarget: 0
   stoppingDistance: 1
   rotationSpeed: 15
