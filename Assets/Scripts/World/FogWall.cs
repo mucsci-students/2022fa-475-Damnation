@@ -5,14 +5,12 @@ using UnityEngine;
 public class FogWall : MonoBehaviour
 {
   public GameObject fogWallCollider;
-  public GameObject levelMusicObj;
-  public GameObject bossMusicObj;
+  public BossManager bossManager;
 
   void OnTriggerEnter(Collider other)
   {
     fogWallCollider.SetActive(true);
-    levelMusicObj.SetActive(false);
-    bossMusicObj.SetActive(true);
+    bossManager.InitiateBossFight();
     Destroy(gameObject);
   }
 }
