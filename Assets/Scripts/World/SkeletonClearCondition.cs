@@ -7,13 +7,14 @@ public class SkeletonClearCondition : BossManager
   public EnemyStats skeleton_1;
   public EnemyStats skeleton_2;
   public GameObject fogWall;
+  public GameObject healthbars;
+  public GameObject portalController;
   
   void Update()
   {
     if(startFlag)
     {
-      // Activate boss health bars;
-      Debug.Log("Healthbars Activated");
+      healthbars.SetActive(true);
       startFlag = false;
     }
 
@@ -26,7 +27,8 @@ public class SkeletonClearCondition : BossManager
   void EndBossFight()
   {
     fogWall.SetActive(false);
-    //Activate portal here
+    healthbars.SetActive(false);
+    portalController.SetActive(true);
     Victory();
   }
 }
