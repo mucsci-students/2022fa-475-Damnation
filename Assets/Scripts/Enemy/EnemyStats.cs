@@ -6,7 +6,7 @@ public class EnemyStats : CharacterStats
 {
   
     public HealthBar healthbar;
-    Animator animator;
+    public Animator animator;
 
     // Start is called before the first frame update
     private void Awake()
