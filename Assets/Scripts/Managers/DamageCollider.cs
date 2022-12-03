@@ -29,7 +29,7 @@ public class DamageCollider : MonoBehaviour
 
         Debug.Log("entered");
         print("hello");
-        if(other.gameObject.tag == "Player"){
+        if(other.tag == "Player"){
 
             PlayerStats playerStats = other.GetComponent<PlayerStats>();
         
@@ -38,7 +38,7 @@ public class DamageCollider : MonoBehaviour
             playerStats.TakeDamage(weaponDamage);
         }
         }
-        if(other.gameObject.tag == "enemy"){
+        if(other.tag == "enemy"){
             Debug.Log("enemy collider");
             EnemyStats enemyStats = other.GetComponent<EnemyStats>();
             

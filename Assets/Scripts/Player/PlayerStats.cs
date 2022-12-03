@@ -6,12 +6,12 @@ using UnityEngine;
 public class PlayerStats : CharacterStats
 {
     public HealthBar healthbar;
-    StaminaBar staminabar;
+    public StaminaBar staminabar;
     AnimationHandler animationHandler;
 
     private void Awake() {
-        healthbar = FindObjectOfType<HealthBar>();
-        staminabar = FindObjectOfType<StaminaBar>();
+       // healthbar = FindObjectOfType<HealthBar>();
+        //staminabar = FindObjectOfType<StaminaBar>();
         animationHandler = GetComponentInChildren<AnimationHandler>();
     }
 
@@ -19,7 +19,7 @@ public class PlayerStats : CharacterStats
             isDead = false;
             maxHealth = SetMaxHealthFromHealthLevel();
             currentHealth = maxHealth;
-            healthbar.SetMaxHealth(maxHealth);
+            //healthbar.SetMaxHealth(maxHealth);
         }
     
     private int SetMaxHealthFromHealthLevel()
@@ -35,15 +35,14 @@ public class PlayerStats : CharacterStats
              }
             currentHealth = currentHealth - damage;
             animationHandler.PlayTargetAnimation("knight_001_face_protection", true);
-            healthbar.SetCurrentHealth(currentHealth);
+           //healthbar.SetCurrentHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
                 
                 currentHealth = 0;
-                animationHandler.PlayTargetAnimation("knight_001_death1", true);
+                animationHandler.PlayTargetAnimation("Death", true);
                 isDead = true;
-                animationHandler.isDead(isDead);
                 
 
         }

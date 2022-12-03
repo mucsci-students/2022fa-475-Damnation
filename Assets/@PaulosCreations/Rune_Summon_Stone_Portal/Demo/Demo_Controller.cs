@@ -6,45 +6,18 @@ public class Demo_Controller : MonoBehaviour
 {
     public Runestone_Controller[] runestoneScript;
     public Portal_Controller[] portalScripts;
-    public Transform camBaseTF;
     public Animator demoAnimator;
     private bool onOffR, runningR, onOffP, runningP, rotateCam;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            ToggleRuneStones();
-        }
+   private void Awake(){
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            TogglePortals();
-        }
+    TogglePortals();
+   }
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            rotateCam = !rotateCam;
 
-            if (rotateCam)
-            demoAnimator.enabled = false;
-        }
+     
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            demoAnimator.enabled = true;
-        }
-
-        if (rotateCam)
-        {
-            camBaseTF.Rotate(Vector3.up, Time.deltaTime * -10f);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
-    }
+   
 
     public void ToggleRuneStones()
     {

@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class FogWall : MonoBehaviour
 {
-  private void Awake()
-  {
-    gameObject.SetActive(false);
-  }
+  public GameObject fogWallCollider;
+  public BossManager bossManager;
 
-  public void ActivateFogWall()
+  void OnTriggerEnter(Collider other)
   {
-    gameObject.SetActive(true);
-  }
-
-  public void DeactivateFogWall()
-  {
-    gameObject.SetActive(false);
+    fogWallCollider.SetActive(true);
+    bossManager.InitiateBossFight();
+    Destroy(gameObject);
   }
 }
