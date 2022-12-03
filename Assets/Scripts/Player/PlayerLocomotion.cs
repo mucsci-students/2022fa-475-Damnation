@@ -157,6 +157,7 @@ public class PlayerLocomotion : MonoBehaviour
 
       if(inputHandler.moveAmount > 0)
       {
+        playerManager.isInteracting = true;
         animationHandler.PlayTargetAnimation("Roll", true);
         moveDirection.y = 0;
         Quaternion dodgeRotation = Quaternion.LookRotation(moveDirection);
@@ -164,8 +165,8 @@ public class PlayerLocomotion : MonoBehaviour
       }
       else
       {
+        playerManager.isInteracting = true;
         animationHandler.PlayTargetAnimation("Backstep Dodge", true);
-        
       }
     }
   }
@@ -184,10 +185,7 @@ public class PlayerLocomotion : MonoBehaviour
 
     if(playerManager.isInAir)
     {
-      //rigidbody.AddForce(-Vector3.up * fallingSpeed);
-      //rigidbody.AddForce(moveDirection * fallingSpeed / 10f);
       rigidbody.AddForce((-Vector3.up * fallingSpeed) + (moveDirection * fallingSpeed / 10f));
-      //acceleration += 0.01f;
     }
 
     Vector3 dir = moveDirection;
@@ -214,7 +212,6 @@ public class PlayerLocomotion : MonoBehaviour
           animationHandler.PlayTargetAnimation("Empty", false);
           inAirTimer = 0;
         }
-        //acceleration = 0f;
         playerManager.isInAir = false;
       }
     }

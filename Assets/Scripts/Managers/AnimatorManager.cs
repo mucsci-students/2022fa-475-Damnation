@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AnimatorManager : MonoBehaviour
 {
-    public Animator anim;
-    public void PlayTargetAnimation(string targetAnim, bool isInteracting)
+  public Animator anim;
+  public void PlayTargetAnimation(string targetAnim, bool isInteracting)
   {
     anim.applyRootMotion = isInteracting;
     
