@@ -172,8 +172,19 @@
                 },
                 {
                     "name": "",
+                    "id": "48194f79-6129-40d1-bbbc-61ef7b2d17ff",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dodge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "aa8e23b7-e84d-4784-95fd-27706f70d687",
-                    "path": "<Keyboard>/e",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -195,7 +206,7 @@
                 {
                     "name": "",
                     "id": "b9fc9ac7-d3c6-4e45-870e-8c01ec5ef50d",
-                    "path": "<Keyboard>/r",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
