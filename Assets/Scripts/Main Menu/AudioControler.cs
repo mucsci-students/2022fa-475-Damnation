@@ -10,7 +10,8 @@ public class AudioControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("MasterVol")) {
+        if (PlayerPrefs.HasKey("MasterVol"))
+        {
             theMixer.SetFloat("MasterVol", PlayerPrefs.GetFloat("MasterVol"));
         }
 
