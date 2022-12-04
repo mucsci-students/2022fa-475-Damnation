@@ -22,6 +22,17 @@ public class SkeletonClearCondition : BossManager
     {
       EndBossFight();
     }
+
+    if(victoryFlag)
+    {
+      victoryScreen.SetActive(true);
+      victoryScreenTimer += Time.deltaTime;
+      if(victoryScreenTimer >= maxTimer)
+      {
+        victoryScreen.SetActive(false);
+        victoryFlag = false;
+      }
+    }
   }
 
   void EndBossFight()

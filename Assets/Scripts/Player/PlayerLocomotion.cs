@@ -7,6 +7,7 @@ public class PlayerLocomotion : MonoBehaviour
   PlayerManager playerManager;
   Transform cameraObject;
   InputHandler inputHandler;
+  PlayerStats playerStats;
   [HideInInspector]
   public Vector3 moveDirection;
 
@@ -58,6 +59,7 @@ public class PlayerLocomotion : MonoBehaviour
     playerManager = GetComponent<PlayerManager>();
     rigidbody = GetComponent<Rigidbody>();
     inputHandler = GetComponent<InputHandler>();
+    playerStats = GetComponent<PlayerStats>();
     //animationHandler = GetComponent<AnimationHandler>();
     cameraObject = Camera.main.transform;
     myTransform = transform;
@@ -74,6 +76,12 @@ public class PlayerLocomotion : MonoBehaviour
 
   private void handleRotation(float delta)
   {
+    if(playerStats.isDead)
+    {
+      return;
+    }
+      
+    
     Vector3 targetDir = Vector3.zero;
     float moveOverride = inputHandler.moveAmount;
 
@@ -99,6 +107,9 @@ public class PlayerLocomotion : MonoBehaviour
 
   public void HandleMovement(float delta)
   {
+    if(playerStats.isDead)
+      return;
+
     if (inputHandler.dodgeFlag)
       return;
 
@@ -147,6 +158,9 @@ public class PlayerLocomotion : MonoBehaviour
 
   public void HandleDodgingAndSprinting(float delta)
   {
+    if(playerStats.isDead)
+      return;
+
     if(animationHandler.anim.GetBool("isInteracting"))
       return;
 
