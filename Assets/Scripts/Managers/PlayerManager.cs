@@ -47,7 +47,7 @@ public class PlayerManager : MonoBehaviour
   {
     inputHandler = GetComponent<InputHandler>();
     anim = GetComponentInChildren<Animator>();
-    playerLocomotion = GetComponent<PlayerLocomotion>();
+    //playerLocomotion = GetComponent<PlayerLocomotion>();
     estus = GetComponent<EstusFlasks>();
     //animHandler = GetComponentInChildren<AnimationHandler>();
   }
@@ -95,7 +95,7 @@ public class PlayerManager : MonoBehaviour
 
   void dodgeIFrames(float delta)
   {
-    if(inputHandler.dodgeFlag)
+    if(inputHandler.dodgeFlag || !playerLocomotion.notEnoughStamina)
     {
       iFrameCube.SetActive(true);
       invincibilityFlag = true;

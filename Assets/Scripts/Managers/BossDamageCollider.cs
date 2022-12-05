@@ -5,11 +5,13 @@ using UnityEngine;
 public class BossDamageCollider : MonoBehaviour
 {
   BoxCollider damageCollider;
+  EnemyStats enemyStats;
   public int weaponDamage = 25;
 
   private void Awake()
   {
     damageCollider = GetComponent<BoxCollider>();
+    enemyStats = GetComponentInParent<EnemyStats>();
     damageCollider.gameObject.SetActive(true);
     damageCollider.isTrigger = true;
     //damageCollider.enabled = false;
@@ -29,7 +31,8 @@ public class BossDamageCollider : MonoBehaviour
 
   private void OnTriggerEnter(Collider other)
   {
-    
+    if(enemyStats.isDead)
+      return;
     if(other.tag == "Player")
     {
       Debug.Log("Player in hitbox");

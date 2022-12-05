@@ -46,17 +46,11 @@ public class PlayerLocomotion : MonoBehaviour
   float dodgeSpeed = 15;
   [SerializeField]
   float fallingSpeed = 45;
-/*
-  [Header("Rolling")]
-  [SerializeField]
-  Transform rollEndpoint;
-  [SerializeField]
-  Transform rollEndpointTransform;
-  [SerializeField]
-  Transform backstepEndpointTransform;
-  [SerializeField]
-  Transform rollCarrier;
-*/
+
+
+  [Header("Stamina")]
+  public bool notEnoughStamina;
+
   void Start()
   {
     playerManager = GetComponent<PlayerManager>();
@@ -174,7 +168,12 @@ public class PlayerLocomotion : MonoBehaviour
     if(inputHandler.dodgeFlag)
     {
       if(playerStats.currentStamina < staminaHandler.dodgeCost)
+      {
+        notEnoughStamina = true;
         return;
+      }
+  
+      notEnoughStamina = false;
       
       playerStats.TakeStaminaDamage(staminaHandler.dodgeCost);
       moveDirection = cameraObject.forward * inputHandler.vertical;

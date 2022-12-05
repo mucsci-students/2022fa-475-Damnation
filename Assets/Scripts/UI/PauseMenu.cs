@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
 
     public bool isPaused;
+    //public MenuInputHandler inputHandler;
 
     // Update is called once per frame
     void Update()

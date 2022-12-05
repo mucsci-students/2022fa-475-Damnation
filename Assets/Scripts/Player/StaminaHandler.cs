@@ -30,7 +30,7 @@ public class StaminaHandler : MonoBehaviour
       if(playerStats.currentStamina <= 0)
         playerStats.currentStamina = 0;
       else
-        playerStats.TakeStaminaDamage(0.5f);
+        playerStats.TakeStaminaDamage(0.25f);
     }
   }
 }
