@@ -13,10 +13,12 @@ public class InputHandler: MonoBehaviour
   public bool b_Input;
   public bool rb_Input;
   public bool rt_Input;
+  public bool x_Input;
 
   public bool dodgeFlag;
   public bool sprintFlag;
   public float dodgeInputTimer;
+  
 
   PlayerControls inputActions;
   PlayerAttacker playerAttacker;
@@ -54,6 +56,7 @@ public class InputHandler: MonoBehaviour
     MoveInput(delta);
     HandleDodgeInput(delta);
     HandleAttackInput(delta);
+    HandleHealInput(delta);
   }
 
   private void MoveInput(float delta)
@@ -97,7 +100,6 @@ public class InputHandler: MonoBehaviour
     {
       animationHandler.anim.SetBool("isUsingRightHand", true);
       playerAttacker.HandleLightAttack(playerInventory.rightWeapon);
-
     }
     
     if(rt_Input)
@@ -105,5 +107,10 @@ public class InputHandler: MonoBehaviour
       playerAttacker.HandleHeavyAttack(playerInventory.rightWeapon);
       animationHandler.anim.SetBool("isUsingRightHand", true);
     }
+  }
+
+  private void HandleHealInput(float delta)
+  {
+    inputActions.PlayerActions.Heal.performed += i => x_Input = true;
   }
 }

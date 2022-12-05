@@ -8,6 +8,8 @@ public class PlayerManager : MonoBehaviour
   Animator anim;
   CameraHandler cameraHandler;
   PlayerLocomotion playerLocomotion;
+  EstusFlasks estus;
+
 
   [Header("Player Flags")]
   public bool isInteracting;
@@ -17,11 +19,18 @@ public class PlayerManager : MonoBehaviour
   public bool isUsingRightHand;
   public bool isUsingLeftHand;
   public bool invincibilityFlag;
+  public bool healFlag;
 
   [Header("I-Frame Data")]
   public GameObject iFrameCube;
   public float iFrameTimer = 0f;
   public float maxIFrameTimer = 0.1f;
+
+  [Header("Heal Data")]
+  public bool healTimerEnabled;
+  public float healTimer = 0f;
+  public float maxHealTimer = 10f;
+  public GameObject healSound;
 
   private void Awake()
   {
@@ -33,6 +42,8 @@ public class PlayerManager : MonoBehaviour
     inputHandler = GetComponent<InputHandler>();
     anim = GetComponentInChildren<Animator>();
     playerLocomotion = GetComponent<PlayerLocomotion>();
+    estus = GetComponent<EstusFlasks>();
+    //animHandler = GetComponentInChildren<AnimationHandler>();
   }
 
   void Update()
@@ -46,6 +57,7 @@ public class PlayerManager : MonoBehaviour
     playerLocomotion.HandleMovement(delta);
     playerLocomotion.HandleDodgingAndSprinting(delta);
     playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
+    CheckFlask(delta);
     dodgeIFrames(delta);
     
   }
@@ -67,6 +79,7 @@ public class PlayerManager : MonoBehaviour
     inputHandler.sprintFlag = false;
     inputHandler.rb_Input = false;
     inputHandler.rt_Input = false;
+    inputHandler.x_Input = false;
     
     if(isInAir)
     {
@@ -95,5 +108,33 @@ public class PlayerManager : MonoBehaviour
     {
       iFrameTimer = 0f;
     }
+  }
+
+  void CheckFlask(float delta)
+  {
+    healFlag = inputHandler.x_Input;
+
+    if(healFlag && !healTimerEnabled)
+    { 
+      if(estus.flaskCount == 0)
+        return;
+
+      healTimerEnabled = true;
+      estus.DrinkFlask();
+      estus.flaskCount--;
+      healSound.SetActive(false);
+      healSound.SetActive(true);
+      healFlag = false;
+    }
+
+    if(healTimerEnabled)
+    {
+      healTimer += delta;
+      if(healTimer >= maxHealTimer)
+      {
+        healTimerEnabled = false;
+      }
+    }
+    
   }
 }

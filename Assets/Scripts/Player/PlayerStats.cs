@@ -45,6 +45,10 @@ public class PlayerStats : CharacterStats
       animationHandler.PlayTargetAnimation("Death", true);
       isDead = true;
     }
+    else if(currentHealth >= maxHealth)
+    {
+      currentHealth = maxHealth;
+    }
   }
 
   public void TakeStaminaDamage(int damage)

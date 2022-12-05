@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
+using TMPro;
 public class SkeletonClearCondition : BossManager
 {
   public EnemyStats skeleton_1;
@@ -12,6 +13,17 @@ public class SkeletonClearCondition : BossManager
   public bool skeleton_1_dead = false;
   public bool skeleton_2_dead = false;
   
+  public TextMeshProUGUI bossText;
+  public TextMeshProUGUI bossText2;
+  
+  public string bossName;
+
+  void Start()
+  {
+    bossText.text = bossName;
+    bossText2.text = bossName;
+  }
+
   void Update()
   {
     if(startFlag)
