@@ -21,6 +21,11 @@ public class PlayerStats : CharacterStats
     maxHealth = SetMaxHealthFromHealthLevel();
     currentHealth = maxHealth;
     healthbar.SetMaxHealth(maxHealth);
+
+    maxStamina = SetMaxStaminaFromStaminaLevel();
+    currentStamina = maxStamina;
+    staminabar.SetMaxStamina(maxStamina);
+
     playerManager = GetComponent<PlayerManager>();
   }
     
@@ -28,6 +33,12 @@ public class PlayerStats : CharacterStats
   {
     maxHealth = healthLevel * 10;
     return maxHealth;
+  }
+
+  private float SetMaxStaminaFromStaminaLevel()
+  {
+    maxStamina = staminaLevel * 10;
+    return maxStamina;
   }
 
   public void TakeDamage(int damage)
@@ -44,6 +55,7 @@ public class PlayerStats : CharacterStats
       currentHealth = 0;
       animationHandler.PlayTargetAnimation("Death", true);
       isDead = true;
+      playerManager.playerLocomotion.enabled = false;
     }
     else if(currentHealth >= maxHealth)
     {
@@ -51,7 +63,7 @@ public class PlayerStats : CharacterStats
     }
   }
 
-  public void TakeStaminaDamage(int damage)
+  public void TakeStaminaDamage(float damage)
   {
     currentStamina = currentStamina - damage;
     staminabar.SetCurrentStamina(currentStamina);

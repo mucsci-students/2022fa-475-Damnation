@@ -1833,6 +1833,7 @@ MonoBehaviour:
   minimumDistanceNeededToBeginFall: 1
   groundDirectionRayDistance: 0.1
   inAirTimer: 0
+  deathFall: 0
   walkingSpeed: 3
   movementSpeed: 5
   sprintSpeed: 7
@@ -1859,6 +1860,7 @@ MonoBehaviour:
   isUsingLeftHand: 0
   invincibilityFlag: 0
   healFlag: 0
+  outOfStamina: 0
   iFrameCube: {fileID: 8073312741876249188}
   iFrameTimer: 0
   maxIFrameTimer: 0.3
@@ -2040,7 +2042,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8073312741876249188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

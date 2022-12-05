@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour
   InputHandler inputHandler;
   Animator anim;
   CameraHandler cameraHandler;
-  PlayerLocomotion playerLocomotion;
+  public PlayerLocomotion playerLocomotion;
   EstusFlasks estus;
 
 
@@ -20,6 +20,7 @@ public class PlayerManager : MonoBehaviour
   public bool isUsingLeftHand;
   public bool invincibilityFlag;
   public bool healFlag;
+  public bool outOfStamina;
 
   [Header("I-Frame Data")]
   public GameObject iFrameCube;

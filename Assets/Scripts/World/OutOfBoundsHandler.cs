@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class OutOfBoundsHandler : MonoBehaviour
 {
-  PlayerStats playerStats;
+  public PlayerStats playerStats;
   public GameObject fallingSound;
+  //BoxCollider fallCollider;
+
   void OnTriggerEnter(Collider other)
   {
     if(other.gameObject.tag == "Player")
     {
       fallingSound.SetActive(true);
-      playerStats = other.gameObject.GetComponent<PlayerStats>();
+      
       playerStats.TakeDamage(9999);
+      Destroy(gameObject);
     }
   }
+/*
+  void OnCollisionEnter(Collision other)
+  {
+    if(other.gameObject.tag == "Player")
+    {
+      Debug.Log("Collision successful");
+    }
+  }
+*/
 }

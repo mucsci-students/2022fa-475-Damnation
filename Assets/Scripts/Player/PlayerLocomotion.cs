@@ -29,6 +29,7 @@ public class PlayerLocomotion : MonoBehaviour
   float groundDirectionRayDistance = 0.2f;
   LayerMask ignoreForGroundCheck;
   public float inAirTimer;
+  public bool deathFall;
 
   [Header("Movement Stats")]
   [SerializeField]

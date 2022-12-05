@@ -5,19 +5,25 @@ using UnityEngine;
 public class PlayerAttacker : MonoBehaviour
 {
   AnimationHandler animationHandler;
+  PlayerStats playerStats;
 
   private void Awake()
   {
     animationHandler = GetComponentInChildren<AnimationHandler>();
+    playerStats = GetComponent<PlayerStats>();
   }
 
   public void HandleLightAttack(WeaponItem weapon)
   {
+    if(playerStats.isDead)
+      return;
     animationHandler.PlayTargetAnimation(weapon.OH_Light_Attack_1, true);
   }
 
   public void HandleHeavyAttack(WeaponItem weapon)
   {
+    if(playerStats.isDead)
+      return;
     animationHandler.PlayTargetAnimation(weapon.OH_Heavy_Attack_1, true);
   }
 }

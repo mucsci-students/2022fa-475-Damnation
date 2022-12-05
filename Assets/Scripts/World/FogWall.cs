@@ -9,8 +9,11 @@ public class FogWall : MonoBehaviour
 
   void OnTriggerEnter(Collider other)
   {
-    fogWallCollider.SetActive(true);
-    bossManager.InitiateBossFight();
-    Destroy(gameObject);
+    if(other.gameObject.tag == "Player")
+    {
+      fogWallCollider.SetActive(true);
+      bossManager.InitiateBossFight();
+      Destroy(gameObject);
+    }
   }
 }
