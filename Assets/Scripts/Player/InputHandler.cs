@@ -18,7 +18,7 @@ public class InputHandler: MonoBehaviour
   public bool dodgeFlag;
   public bool sprintFlag;
   public float dodgeInputTimer;
-  
+  public bool outOfStamina;
 
   PlayerControls inputActions;
   PlayerAttacker playerAttacker;
@@ -71,6 +71,11 @@ public class InputHandler: MonoBehaviour
 
   private void HandleDodgeInput(float delta)
   {
+    if(outOfStamina)
+    {
+      b_Input = false;
+      return;
+    }
     b_Input = inputActions.PlayerActions.Dodge.IsPressed();
 
     if (b_Input)

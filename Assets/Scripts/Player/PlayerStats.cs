@@ -67,6 +67,16 @@ public class PlayerStats : CharacterStats
   {
     currentStamina = currentStamina - damage;
     staminabar.SetCurrentStamina(currentStamina);
+    
+    if (currentStamina <= 0)
+    {      
+      currentStamina = 0;
+      playerManager.outOfStamina = true;
+    }
+    else if(currentStamina >= maxStamina)
+    {
+      currentStamina = maxStamina;
+    }
   }
 }
 

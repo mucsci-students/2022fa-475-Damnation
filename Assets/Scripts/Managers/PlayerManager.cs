@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
   public bool invincibilityFlag;
   public bool healFlag;
   public bool outOfStamina;
+  public bool notEnoughStamina;
 
   [Header("I-Frame Data")]
   public GameObject iFrameCube;
@@ -32,6 +33,10 @@ public class PlayerManager : MonoBehaviour
   public float healTimer = 0f;
   public float maxHealTimer = 10f;
   public GameObject healSound;
+
+  [Header("Stamina Data")]
+  float staminaRechargeTimer = 0f;
+  public float maxStaminaTimer = 2f;
 
   private void Awake()
   {
@@ -60,7 +65,7 @@ public class PlayerManager : MonoBehaviour
     playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
     CheckFlask(delta);
     dodgeIFrames(delta);
-    
+    StaminaCheck(delta);
   }
 
   private void FixedUpdate()
@@ -135,7 +140,21 @@ public class PlayerManager : MonoBehaviour
       {
         healTimerEnabled = false;
       }
-    }
+    }  
+  }
+
+  void StaminaCheck(float delta)
+  {
+    inputHandler.outOfStamina = outOfStamina;
     
+    if(outOfStamina)
+    {
+      staminaRechargeTimer += delta;
+      if(staminaRechargeTimer >= maxStaminaTimer)
+      {
+        staminaRechargeTimer = 0;
+        outOfStamina = false;
+      }
+    }
   }
 }

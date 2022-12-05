@@ -8,6 +8,8 @@ public class PlayerLocomotion : MonoBehaviour
   Transform cameraObject;
   InputHandler inputHandler;
   PlayerStats playerStats;
+  StaminaHandler staminaHandler;
+  
   [HideInInspector]
   public Vector3 moveDirection;
 
@@ -61,7 +63,8 @@ public class PlayerLocomotion : MonoBehaviour
     rigidbody = GetComponent<Rigidbody>();
     inputHandler = GetComponent<InputHandler>();
     playerStats = GetComponent<PlayerStats>();
-    //animationHandler = GetComponent<AnimationHandler>();
+    staminaHandler = GetComponent<StaminaHandler>();
+
     cameraObject = Camera.main.transform;
     myTransform = transform;
     animationHandler.Initialize();
@@ -165,8 +168,15 @@ public class PlayerLocomotion : MonoBehaviour
     if(animationHandler.anim.GetBool("isInteracting"))
       return;
 
+    if(playerManager.outOfStamina)
+      return;
+
     if(inputHandler.dodgeFlag)
     {
+      if(playerStats.currentStamina < staminaHandler.dodgeCost)
+        return;
+      
+      playerStats.TakeStaminaDamage(staminaHandler.dodgeCost);
       moveDirection = cameraObject.forward * inputHandler.vertical;
       moveDirection += cameraObject.right * inputHandler.horizontal;
 
