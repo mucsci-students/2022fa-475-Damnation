@@ -16,6 +16,12 @@ public class PlayerManager : MonoBehaviour
   public bool isGrounded;
   public bool isUsingRightHand;
   public bool isUsingLeftHand;
+  public bool invincibilityFlag;
+
+  [Header("I-Frame Data")]
+  public GameObject iFrameCube;
+  public float iFrameTimer = 0f;
+  public float maxIFrameTimer = 0.1f;
 
   private void Awake()
   {
@@ -40,6 +46,8 @@ public class PlayerManager : MonoBehaviour
     playerLocomotion.HandleMovement(delta);
     playerLocomotion.HandleDodgingAndSprinting(delta);
     playerLocomotion.HandleFalling(delta, playerLocomotion.moveDirection);
+    dodgeIFrames(delta);
+    
   }
 
   private void FixedUpdate()
@@ -63,6 +71,29 @@ public class PlayerManager : MonoBehaviour
     if(isInAir)
     {
       playerLocomotion.inAirTimer += Time.deltaTime;
+    }
+  }
+
+  void dodgeIFrames(float delta)
+  {
+    if(inputHandler.dodgeFlag)
+    {
+      iFrameCube.SetActive(true);
+      invincibilityFlag = true;
+    }
+
+    if(invincibilityFlag)
+    {
+      iFrameTimer += delta;
+      if(iFrameTimer >= maxIFrameTimer)
+      {
+        iFrameCube.SetActive(false);
+        invincibilityFlag = false;
+      }
+    }
+    else
+    {
+      iFrameTimer = 0f;
     }
   }
 }

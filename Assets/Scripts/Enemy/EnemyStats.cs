@@ -7,6 +7,11 @@ public class EnemyStats : CharacterStats
   
     public HealthBar healthbar;
     public Animator animator;
+    public GameObject deathSound;
+    bool deathFlag = false;
+    float deathtimer = 0f;
+    float maxTimer = 2f;
+    bool onFlag = true;
 
     // Start is called before the first frame update
     private void Awake()
@@ -38,7 +43,7 @@ public class EnemyStats : CharacterStats
             currentHealth = 0;
             animator.Play("Death");
             isDead = true;
-
+            deathFlag = true;
         }
     }
    
@@ -46,6 +51,20 @@ public class EnemyStats : CharacterStats
     // Update is called once per frame
     void Update()
     {
-        
+      if(deathFlag)
+      {
+        deathSound.SetActive(true);
+        deathFlag = false;
+      }
+
+      if(isDead)
+      {
+        deathtimer += Time.deltaTime;
+        if (deathtimer >= maxTimer)
+        {
+          deathSound.SetActive(false);
+          gameObject.SetActive(false);
+        }
+      }
     }
 }

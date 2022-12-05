@@ -12,12 +12,13 @@ public class BossDamageCollider : MonoBehaviour
     damageCollider = GetComponent<BoxCollider>();
     damageCollider.gameObject.SetActive(true);
     damageCollider.isTrigger = true;
-    damageCollider.enabled = false;
+    //damageCollider.enabled = false;
+    EnableDamageCollider();
   }
 
   public void EnableDamageCollider()
   {
-    Debug.Log("enable sword");
+    Debug.Log("BOSS SWORD ENABLED");
     damageCollider.enabled = true;
   }
 
@@ -28,9 +29,10 @@ public class BossDamageCollider : MonoBehaviour
 
   private void OnTriggerEnter(Collider other)
   {
-    Debug.Log("entered");
+    
     if(other.tag == "Player")
     {
+      Debug.Log("Player in hitbox");
       PlayerStats playerStats = other.GetComponent<PlayerStats>();
         
       if(playerStats != null)

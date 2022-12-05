@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageCollider : MonoBehaviour
+public class AoeCollider : MonoBehaviour
 {
-    BoxCollider damageCollider;
-    public int weaponDamage = 25;
+    SphereCollider damageCollider;
+    public int damage = 50;
 
     private void Awake(){
-        damageCollider = GetComponent<BoxCollider>();
+        damageCollider = GetComponent<SphereCollider>();
         damageCollider.gameObject.SetActive(true);
-        damageCollider.isTrigger = true;
-        damageCollider.enabled = false;
-
     }
 
     public void EnableDamageCollider(){
@@ -26,24 +23,17 @@ public class DamageCollider : MonoBehaviour
 
    private void OnTriggerEnter(Collider other){
 
-
+       
         if(other.tag == "Player"){
 
             PlayerStats playerStats = other.GetComponent<PlayerStats>();
         
         if(playerStats != null){
-
-            playerStats.TakeDamage(weaponDamage);
+          
+            playerStats.TakeDamage(damage);
         }
         }
-        if(other.tag == "enemy"){
-            EnemyStats enemyStats = other.GetComponent<EnemyStats>();
-            
         
-        if(enemyStats != null){
-            
-            enemyStats.TakeDamage(weaponDamage);
-        }
-        }
+        
     }
 }

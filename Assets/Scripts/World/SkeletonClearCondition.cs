@@ -9,6 +9,8 @@ public class SkeletonClearCondition : BossManager
   public GameObject fogWall;
   public GameObject healthbars;
   public GameObject portalController;
+  public bool skeleton_1_dead = false;
+  public bool skeleton_2_dead = false;
   
   void Update()
   {
@@ -17,8 +19,18 @@ public class SkeletonClearCondition : BossManager
       healthbars.SetActive(true);
       startFlag = false;
     }
+    
+    if(skeleton_1.isDead)
+    {
+      skeleton_1_dead = true;
+    }
 
-    if(bossFightActive && skeleton_1.isDead && skeleton_2.isDead)
+    if(skeleton_2.isDead)
+    {
+      skeleton_2_dead = true;
+    }
+
+    if(bossFightActive && skeleton_1_dead && skeleton_2_dead)
     {
       EndBossFight();
     }

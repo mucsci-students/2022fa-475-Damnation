@@ -16,8 +16,8 @@ MonoBehaviour:
   itemName: Skeleton Sword
   modelPrefab: {fileID: 2371544238115897632, guid: 4483be76a69a3244bba583c569febb69, type: 3}
   isUnarmed: 0
-  OH_Light_Attack_1: OH_Sword_Attack1
-  OH_Heavy_Attack_1: OH_Sword_Attack2
+  OH_Light_Attack_1: OH_Light_Attack1
+  OH_Heavy_Attack_1: Jump Attack
   baseStamina: 0
   lightAttackMultiplier: 0
   heavyAttackMultiplier: 0
