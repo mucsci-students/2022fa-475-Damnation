@@ -8,4 +8,4 @@
 
 ## Windows download: https://drive.google.com/file/d/1WdZTIO1smxtFalYpKBysLZ3Hd-27BPlC/view?usp=sharing
 
-## Mac download:
+## Mac download: https://drive.google.com/file/d/1JxpRlOP76hEP56XlehUpQCA6RYpieWsC/view?usp=sharing
