@@ -6,12 +6,12 @@ public class AoeCollider : MonoBehaviour
 {
     SphereCollider damageCollider;
     public int damage = 50;
-    EnemyStats enemyStats;
+    public EnemyStats enemyStats;
 
     private void Awake(){
         damageCollider = GetComponent<SphereCollider>();
         damageCollider.gameObject.SetActive(true);
-        enemyStats.GetComponentInParent<EnemyStats>();
+        
     }
 
     public void EnableDamageCollider(){

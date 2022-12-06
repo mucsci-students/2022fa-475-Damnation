@@ -10,7 +10,7 @@ public class BossManager : MonoBehaviour
   public GameObject victorySound;
   public GameObject victoryScreen;
   
-  [HideInInspector]
+  
   public bool startFlag = false;
   public bool victoryFlag = false;
   

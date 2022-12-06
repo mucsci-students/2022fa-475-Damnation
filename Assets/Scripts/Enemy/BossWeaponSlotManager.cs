@@ -14,6 +14,8 @@ public class BossWeaponSlotManager : MonoBehaviour
   BossDamageCollider leftHandDamageCollider;
   BossDamageCollider rightHandDamageCollider;
   EnemyManager enemyManager;
+  
+  public GameObject aoeCollider;
 
   private void Awake() 
   {
@@ -91,5 +93,15 @@ public class BossWeaponSlotManager : MonoBehaviour
   public void CloseDamageCollider()
   {
     rightHandDamageCollider.DisableDamageCollider();
+  }
+
+  public void OpenAOECollider()
+  {
+    aoeCollider.SetActive(true);
+  }
+
+  public void CloseAOECollider()
+  {
+    aoeCollider.SetActive(false);
   }
 }

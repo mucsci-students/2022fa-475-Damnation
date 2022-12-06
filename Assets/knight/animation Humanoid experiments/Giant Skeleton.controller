@@ -241,20 +241,6 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
---- !u!114 &-5029898181680943913
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45a713d0f189b5b4190d51e89a3f84ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timerFlag: 0
-  maxTimer: 1.4
 --- !u!1101 &-4613096486875447439
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -725,12 +711,11 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Jump Attack
-  m_Speed: 0.8
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 5830652724092709786}
-  m_StateMachineBehaviours:
-  - {fileID: -5029898181680943913}
+  m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -739,7 +724,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 25866a782fed0d645b75b3dbbe5463ef, type: 3}
+  m_Motion: {fileID: 7400000, guid: 7194bb3814a48374d9fbaad6dc27c3de, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

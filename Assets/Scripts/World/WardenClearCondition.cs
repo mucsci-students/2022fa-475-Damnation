@@ -23,6 +23,7 @@ public class WardenClearCondition : BossManager
   {
     if(startFlag)
     {
+      Debug.Log("Startflag is true");
       healthbar.SetActive(true);
       startFlag = false;
     }
