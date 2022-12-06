@@ -12,5 +12,5 @@
 
 ##bugs##
 do not click the gear icon in the top right. It opens the pause menu but
-disables the HUD for the player. Use the the escape key to enter and exit the pause
+disables the HUD for the player. Use the escape key to enter and exit the pause
 menu.
