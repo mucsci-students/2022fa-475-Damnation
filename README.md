@@ -20,3 +20,5 @@ menu.
 - If you get stuck on the spiral staircase, swing your sword and you'll break free.
 
 - If you agro all the skeletons in the area right before the 1st boss, they'll pile up on the fog gate and push each other through. To prevent this, hug the left mountain on your way to fog gate. That way, you'll only agro 3 of them, and they shouldn't come through unless you're right up against the fog gate during the boss fight.
+
+- If your character is perpetually falling and stuck in the ground, find a slope and it should stop.
