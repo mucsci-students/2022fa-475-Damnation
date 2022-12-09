@@ -7,9 +7,9 @@
 ## Warning: This game is VERY difficult! It is based off of the Dark Souls games.
 
 ## Version 1.0: (Review this version)
-## Windows download:https://drive.google.com/drive/u/0/folders/1OlnZdM7cp3sk_3ZkJeXiUOcq2d_9Zj9r?ths=true
+### Windows download:https://drive.google.com/drive/u/0/folders/1OlnZdM7cp3sk_3ZkJeXiUOcq2d_9Zj9r?ths=true
 
-## Mac download: https://drive.google.com/drive/u/0/folders/1OlnZdM7cp3sk_3ZkJeXiUOcq2d_9Zj9r?ths=true
+### Mac download: https://drive.google.com/drive/u/0/folders/1OlnZdM7cp3sk_3ZkJeXiUOcq2d_9Zj9r?ths=true
 
 ### bugs
 - do not click the gear icon in the top right. It opens the pause menu but
