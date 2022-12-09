@@ -27,4 +27,4 @@ menu.
 ## Updates
 ### The updates are meant purely for fun. Do NOT review these, as they were released after the due date.
 
-There are currently no updates for this game, but there will be eventually.
+There are currently no updates for this game, but there will be after the semester ends.
