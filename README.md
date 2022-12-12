@@ -37,3 +37,4 @@ The updates are meant purely for fun. I would say "Don't review these", but we'r
 - Added a massive rock in the center of the Giant Skeleton boss room, which will allow players to separate them more easily.
 - Made the benches in the Flooded Manor church more spaced apart to reduce the janky physics in the church. 
 - The Start/Escape menu now displays the current area, time spent in-game, and total number of deaths.
+- The final boss now does slightly more damage.
