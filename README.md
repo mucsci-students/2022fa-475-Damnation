@@ -24,7 +24,16 @@ menu.
 
 - If your character is perpetually falling and stuck in the ground, find a slope and it should stop.
 
-## Updates
-### The updates are meant purely for fun. Do NOT review these, as they were released after the due date.
+## Version 1.1
+### Windows download: https://drive.google.com/file/d/1ROVu5t1DJS64xr_TK8dNl6wMK4D_uG6x/view?usp=sharing
+### Mac Download: Coming soon.
 
-There are currently no updates for this game, but there will be after the semester ends.
+## Update patch notes
+The updates are meant purely for fun. I would say "Don't review these", but we're already past the review period so we don't need to worry about it! :)
+
+###### **Update 1.1:**
+- Progress is now saved upon returning to the Main Menu (but NOT exiting the game).
+- Reworked roll invincibility frames so they're tied to the animations rather than a timer that would sometimes bug out and not activate.
+- Added a massive rock in the center of the Giant Skeleton boss room, which will allow players to separate them more easily.
+- Made the benches in the Flooded Manor church more spaced apart to reduce the janky physics in the church. 
+- The Start/Escape menu now displays the current area, time spent in-game, and total number of deaths.
