@@ -32,6 +32,7 @@ This is a massive expansion expected to release sometime in March 2023. It will 
 - A brand new area
 - 4 new bosses
 - New enemy types
+- A female player option
 - Several quality of life improvements
 - And more...
 
