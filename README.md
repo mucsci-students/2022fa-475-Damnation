@@ -27,7 +27,9 @@ menu.
 ## Version 1.1
 ### Windows download: https://drive.google.com/file/d/1ROVu5t1DJS64xr_TK8dNl6wMK4D_uG6x/view?usp=sharing
 
-## Stay tuned for Version 2.0
+# Future Updates & Releases
+
+### Version 2.0
 This is a massive expansion expected to release sometime in March 2023. It will include the following:
 - A brand new area
 - 4 new bosses
@@ -35,6 +37,15 @@ This is a massive expansion expected to release sometime in March 2023. It will 
 - A female player option
 - Several quality of life improvements
 - And more...
+
+### Version 3.0
+This will be an even larger expansion expected to release sometime this summer or fall. It will feature...
+- Several new areas
+- Several new bosses
+- New features
+
+### UE5 Official Steam Release
+After updates 2.0 and 3.0, I will re-make the game in the Unreal Engine with its own music and sound effects. The maps will be re-done and the character models will be edited to look even more badass than they already are.
 
 ## Update patch notes
 The updates are meant purely for fun. I would say "Don't review these", but we're already past the review period so we don't need to worry about it! :)
