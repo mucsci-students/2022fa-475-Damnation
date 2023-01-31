@@ -26,7 +26,6 @@ menu.
 
 ## Version 1.1
 ### Windows download: https://drive.google.com/file/d/1ROVu5t1DJS64xr_TK8dNl6wMK4D_uG6x/view?usp=sharing
-### Mac Download: Coming soon.
 
 ## Stay tuned for Version 2.0
 This is a massive expansion expected to release sometime in March 2023. It will include the following:
