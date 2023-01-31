@@ -1,7 +1,7 @@
 # Damnation
 
-### Version 1.0: Developed by Matt, Shep, and Yah
-### Updates and expansions: Developed by Matt
+### Version 1.0: Developed by Matt G., Shep, and Yah
+### Updates and expansions: Developed by Matt G.
 
 # This game has controller support! (Except for the main menu & pause menu)
 
